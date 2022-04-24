@@ -82,7 +82,7 @@ before_show_menu() {
 }
 
 install() {
-    bash <(curl -Ls https://blog.sprov.xyz/x-ui.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/nsysp4/x-ui-1/main/x-ui.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
@@ -101,7 +101,7 @@ update() {
         fi
         return 0
     fi
-    bash <(curl -Ls https://raw.githubusercontent.com/sprov065/x-ui/master/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/nsysp4/x-ui-1/main/x-ui.sh)
     if [[ $? == 0 ]]; then
         echo -e "${green}更新完成，已自动重启面板${plain}"
         exit 0
